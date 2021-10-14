@@ -36,7 +36,8 @@ class AdWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(title,
-                      style: const TextStyle(color: Colors.white, fontSize: 30)),
+                      style:
+                          const TextStyle(color: Colors.white, fontSize: 30)),
                   Hero(
                     tag: subTitle,
                     child: Text(subTitle),
