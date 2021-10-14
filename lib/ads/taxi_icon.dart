@@ -6,7 +6,7 @@ class TaxiIcon extends StatelessWidget {
   //생성자
   const TaxiIcon({
     Key key,
-    @required this.title, //이렇게 해야 안전 -> 예전 버전은 @
+    @required this.title,
   }) : super(key: key);
 
   @override

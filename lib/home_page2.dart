@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-//stful ; stateful
-
 class HomePage2 extends StatefulWidget {
   const HomePage2({Key key}) : super(key: key);
 

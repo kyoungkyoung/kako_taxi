@@ -23,9 +23,7 @@ class AdWidget extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(20),
       ),
-      // color: Colors.green, //BoxDecoration쓸때는 Container의 color제거
       margin: EdgeInsets.all(20.0),
-      // padding: EdgeInsets.symmetric(vertical: 10),
       child: Row(
         children: [
           Expanded(

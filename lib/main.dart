@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hello_flutter/tab_page.dart';
-//control+alt+O
 
 void main() {
   runApp(const MyApp());

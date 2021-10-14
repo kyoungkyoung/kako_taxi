@@ -10,7 +10,6 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('위젯 연습'),
       ),
-      //body: Text('위젯 바디!'), //안에 내용을 주고 싶다면 body속성을 준다
       body: Row(
         children: [
           Text('위젯 연습'),
