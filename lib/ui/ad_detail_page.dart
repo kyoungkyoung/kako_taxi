@@ -4,7 +4,7 @@ import 'package:hello_flutter/model/ad.dart';
 class AdDetailPage extends StatelessWidget {
   final Ad ad;
 
-  const AdDetailPage({Key key, @required this.ad}) : super(key: key);
+  const AdDetailPage({Key? key, required this.ad}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class AdDetailPage extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context, ad);
             },
-            child: Text('값 넘기기'),
+            child: const Text('값 넘기기'),
           )
         ],
       ),

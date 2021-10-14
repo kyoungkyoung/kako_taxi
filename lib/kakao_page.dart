@@ -8,7 +8,7 @@ import 'package:hello_flutter/model/ad.dart';
 import 'package:hello_flutter/ui/ad_detail_page.dart';
 
 class KakaoPage extends StatelessWidget {
-  KakaoPage({Key key}) : super(key: key);
+  KakaoPage({Key? key}) : super(key: key);
 
   // 운송수단
   final _menuItems = [
@@ -36,20 +36,6 @@ class KakaoPage extends StatelessWidget {
           'https://mblogthumb-phinf.pstatic.net/20151007_82/mahaya__1444198099543DuNuN_JPEG/frodo_o%27_chorong.jpg?type=w2',
       color: Colors.green,
     )
-    // {
-    //   'title': '안녕하세요',
-    //   'subTitle': 'Hello',
-    //   'imageUrl':
-    //       'https://mblogthumb-phinf.pstatic.net/20151007_82/mahaya__1444198099543DuNuN_JPEG/frodo_o%27_chorong.jpg?type=w2',
-    //   'color': Colors.yellow,
-    // },
-    // {
-    //   'title': '안녕하세요',
-    //   'subTitle': 'Hello',
-    //   'imageUrl':
-    //       'https://mblogthumb-phinf.pstatic.net/20151007_82/mahaya__1444198099543DuNuN_JPEG/frodo_o%27_chorong.jpg?type=w2',
-    //   'color': Colors.green,
-    // }
   ];
 
   // 공지사항
@@ -68,7 +54,7 @@ class KakaoPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Kakao T',
           style: TextStyle(color: Colors.black),
         ),
@@ -84,14 +70,14 @@ class KakaoPage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage2()),
+                    MaterialPageRoute(builder: (context) => const HomePage2()),
                   );
                 },
                 child: TaxiIcon(title: e),
               );
             }).toList(),
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
           ),
           //광고자리
           AspectRatio(
@@ -123,15 +109,15 @@ class KakaoPage extends StatelessWidget {
           // 공지
           ..._notices
               .map((e) => ListTile(
-                  leading: Icon(Icons.alarm),
+                  leading: const Icon(Icons.alarm),
                   title: Text(e),
-                  subtitle: Text('이것은 서브'),
-                  trailing: Icon(Icons.arrow_forward_outlined),
+                  subtitle: const Text('이것은 서브'),
+                  trailing: const Icon(Icons.arrow_forward_outlined),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (BuildContext context) => HomePage()),
+                          builder: (BuildContext context) => const HomePage()),
                     );
                   }
                   //tileColor: Colors.amber,

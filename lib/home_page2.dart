@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //stful ; stateful
 
 class HomePage2 extends StatefulWidget {
-  const HomePage2({Key key}) : super(key: key);
+  const HomePage2({Key? key}) : super(key: key);
 
   @override
   _HomePage2State createState() => _HomePage2State();
@@ -17,7 +17,7 @@ class _HomePage2State extends State<HomePage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomePage2'),
+        title: const Text('HomePage2'),
       ),
       body: Center(
         child: Column(
@@ -32,7 +32,7 @@ class _HomePage2State extends State<HomePage2> {
                   text = '짜잔!!!';
                 });
               },
-              child: Text('버튼'),
+              child: const Text('버튼'),
             )
           ],
         ), //쉼표를 넣어도 되고 않넣어도 된다

@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: KakaoPage(), //HomePage가 변화가 없다면 const를 붙여준다 ; alt+enter
-      home: TabPage(),
+      home: const TabPage(),
     );
   }
 }

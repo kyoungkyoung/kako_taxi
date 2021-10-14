@@ -9,11 +9,11 @@ class AdWidget extends StatelessWidget {
 
   // 생성자
   const AdWidget({
-    Key key,
-    String this.title,
-    String this.subTitle,
-    String this.imageUrl,
-    Color this.color,
+    Key? key,
+    required this.title,
+    required this.subTitle,
+    required this.imageUrl,
+    required this.color,
   }) : super(key: key);
 
   @override
@@ -24,7 +24,7 @@ class AdWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       // color: Colors.green, //BoxDecoration쓸때는 Container의 color제거
-      margin: EdgeInsets.all(20.0),
+      margin: const EdgeInsets.all(20.0),
       // padding: EdgeInsets.symmetric(vertical: 10),
       child: Row(
         children: [
@@ -36,7 +36,7 @@ class AdWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(title,
-                      style: TextStyle(color: Colors.white, fontSize: 30)),
+                      style: const TextStyle(color: Colors.white, fontSize: 30)),
                   Hero(
                     tag: subTitle,
                     child: Text(subTitle),
